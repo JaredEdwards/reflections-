@@ -1,0 +1,11 @@
+What happens when you initialize a repository? Why do you need to do it?
+
+When you initialize a repository it creates a rnew folder that can hold all of the meta data of your files
+You need to initialize one so your file system is ready to accept all of your commits
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+
+The staging area is a place for you to put a collection of items that you want included in the commit. 
+You may have files in a directory that you do not want included in your commit.
+
+ 
