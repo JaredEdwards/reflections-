@@ -8,4 +8,59 @@ How is the staging area different from the working directory and the repository?
 The staging area is a place for you to put a collection of items that you want included in the commit. 
 You may have files in a directory that you do not want included in your commit.
 
- 
+How can you use the staging area to make sure you have one commit per logical change? 
+
+You can make sure that only one line at a time is in the staging area comparing your working directory to the staging area
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+FOr different difficulties of games, making variations that serve different functions. Branches can help by 
+not making you commit your master copy to variation
+
+How do the diagrams help you visualize the branch structure?
+
+It helps you to see the relations to which commits you are using. It makes a visial representation of how you can alter your repository
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+The result is being able to add new features to the previos working product. Could be fixing bugs in software or anything
+We want to make sure we understnad how the merge takes place so we dont merge improperly
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+When Git does it automatically, it organizes everything and checks for redundnacies
+
+
+
+Commands --
+
+git status - status of working directory and staging area
+git add file-name - add file to the staging area to submit a commit
+git reset  ?? reset -- hard ?? clear the staging area
+git commit -- after the add command to create a new commit
+git branch  - tells which branch you are on
+git branch branch-name - creates a new branch named branch-name
+git checkout branch-name - checkout a new branch and start working on a new feature
+git log - see commits for current branch
+git log --graph --oneline master coins - see commits for the branch you are on and preceeding 
+git show 'commit_id' -- after a merge, you have two different branches in hierarchical order, i.e. the branch above or below a certain commit will not the parent.
+				if you want to see the difference between the commit and its parent this command will automatically compare the id to its parent commit. 
+--!! MERGE COINS BRANCH INTO MASTER - i.e. take a feature a program (master) then create a new feature (coins) and you want to 
+add coins INTO the MASTER program to add in the new feature
+git merge 'master' 'coins' -- we added the branch  coins into the master copy
+git branch -d (-d = delete) coins (this deletes the coins branch becuase it has been merged into the master. )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
